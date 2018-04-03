@@ -9,9 +9,12 @@ To make changes and then commit:
 1) `cd` into the Starbucks3125 directory
 2) make changes, edit code, whatever
 3) `git status` or `git diff` to see any changes you've made
-4) `git add "filename"` (without quotes) to add filename to commit OR `git add *` to add all files you've changed
-5) `git commit -m "your commit message"` to add commit message
-6) `git push origin master` to push changes
+
+[4 and 5 if you are not up to date]
+4) `git stash` to stash your changes then `git pull origin master` to pull latest changes
+5) `git stash pop` to pop back your changes
 
 
-----Testing
+6) `git add "filename"` (without quotes) to add filename to commit OR `git add *` to add all files you've changed
+7) `git commit -m "your commit message"` to add commit message
+8) `git push origin master` to push changes
