@@ -10,7 +10,7 @@ To make changes and then commit:
 2) make changes, edit code, whatever
 3) `git status` or `git diff` to see any changes you've made
 
-[4 and 5 if you are not up to date]
+If you are not up to date with latest changes:
 4) `git stash` to stash your changes then `git pull origin master` to pull latest changes
 5) `git stash pop` to pop back your changes
 
