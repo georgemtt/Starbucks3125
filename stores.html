@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- 
 
 ===== Stores Page ===== 
@@ -52,13 +53,27 @@
   </div></nav>
 
 <div class="container scrollable" style="background:white; height: 500px; width: auto; border-bottom: 6px solid #c3c3c3;">
- 	<h1 style ="color:#414141; font-weight:700;">Stores</h1>
+ 	<h1 style ="color:#414141; font-weight:700; display: inline-block;">Stores</h1>
+ 	<button id="storeSearchButton" onclick="showResults();">Search</button>
+ 	<input id="storeSearch" type="text" placeholder="Enter postal code">
  	<div id="tinyBorder" style=" border-bottom: 6px solid #00643C;"> </div>
- 	<div id="storesList">Nearby Stores</div>
+ 	<div id="storesList">Nearby Stores
+ 		<div id="storesListContainer" style="display: none;">
+ 			<div class="storeResult">1615 Orléans Blvd
+ 				 <p>Ottawa, ON K1C 7E2</p>
+ 				 <p>(800) 782-7282</p></div>
+ 			<div class="storeResult">4240 Innes Rd
+ 				 <p>Ottawa, ON K4A 5E6</p>
+ 				 <p>(613) 837-1815</p></div>
+ 			<div class="storeResult">1375 Trim Rd
+ 				 <p>Ottawa, ON K4A 3P7</p>
+ 				 <p>(343) 996-7891</p></div>
+ 		</div>
+ 	</div>
  	<div id="mapContainer">
  		<iframe
 		  width="100%"
-		  height="450"
+		  height="420"
 		  frameborder="0" style="border:0"
 		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJssVPDGY6ieejvtqqhJa3OUeMZ-wikFg
 		    &q=Starbucks+in+Ottawa" allowfullscreen>
@@ -126,3 +141,10 @@
         </div>
     </div></footer>
 </html>
+
+<script>
+	function showResults(){
+		console.log("asf");
+	    document.getElementById("storesListContainer").style.display = "block";
+	}
+</script>
