@@ -51,9 +51,15 @@ Shows order history and pending orders
         </button>
     </li>
     <li style="margin-left:10px">
-        <button type="button" class="btn btn-lg" style="border: none"><a href="signIn.html" style="color:#414141">
-            <!--<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>--> <span class="glyphicon glyphicon-user"></span> Profile <span class="caret"></span></a>
-        </button>
+        <div class="dropdown" style="">
+          <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Profile <span class="caret"></span></button>
+          <ul class="dropdown-menu dropdown-menu-right" style="font-size: 18px">
+            <li><a href="profile.html">Profile Home</a></li>
+            <li style ="border-bottom: 1px solid #979797;"><a href="settings.html">Settings</a></li>
+            <li><a href="index.html">Sign Out</a></li>
+          </ul>
+        </div> 
+
     </li>
        <!--  <button class="btn navbar-btn"><a href="signIn.html"><span class="glyphicon glyphicon-user"></span>Sign In</a></button></li> -->
     
