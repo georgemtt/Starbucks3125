@@ -146,7 +146,19 @@
 	border: 1px solid #d9d9d9;
 }
 
-#submitButton{
+.settingsField{
+	display: block;
+	width: 250px;
+	height: 40px;
+	font-family: Helvetica;
+	font-size: 12px;
+	padding: 8px;
+	margin-bottom: 12px;
+	border-radius: 3px;
+	border: 1px solid #d9d9d9;
+}
+
+.submitButton{
 	width: 250px;
 	height: 40px;
 	color: white;
@@ -158,16 +170,57 @@
 	margin-right: auto;
 }
 
+.submitButton:hover{
+	background-color: #00975b;
+}
+
 #passwordRecovery{
 	margin-top: 12px;
 	font-size: 10px
 }
 
-input:focus{
+button:focus, input:focus{
     outline: none;
 }
 
 .error{
 	color: #ff7f7f;
 	font-size: 12px;
+}
+
+.settingsCard{
+	display: inline-table;
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	height: 580px;
+	width: 270px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+#paymentInfo{
+	display: inline-table;
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	height: 580px;
+	width: 500px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.paymentMethod{
+	width: 100%;
+	height: 125px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+}
+
+.preferred{
+	border-color: #7cc0ff;
+	background-color: #ecf6ff;
 }

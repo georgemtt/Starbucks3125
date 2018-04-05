@@ -69,7 +69,7 @@
   </div></nav>
 
 <div class="container scrollable" style="background:white; height: 500px; width: auto; border-bottom: 6px solid #c3c3c3;">
- 	<h1 style ="color:#414141; font-weight:700; display: inline-block;">Stores</h1>
+ 	<h1 id="storeTitle" style ="color:#414141; font-weight:700; display: inline-block;">Stores</h1>
  	<button id="storeSearchButton" onclick="showResults();">Search</button>
  	<input id="storeSearch" type="text" placeholder="Enter postal code">
  	<div id="tinyBorder" style=" border-bottom: 6px solid #00643C;"> </div>
@@ -160,7 +160,26 @@
 
 <script>
 	function showResults(){
-		console.log("asf");
-	    document.getElementById("storesListContainer").style.display = "block";
-	}
+    var parent = document.querySelector("#storeTitle");
+
+    var input = document.getElementById("storeSearch").value;
+    var regex = /^(([A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]))$/;
+    if(regex.test(input)){
+      document.getElementById("storesListContainer").style.display = "block";
+    }
+    else{
+      console.log("asdfa")
+      if(document.querySelector(".error")){
+        var rem = document.querySelector(".error")
+        parent.removeChild(rem);
+      } 
+  
+      var error = document.createElement('p'); 
+      error.classList.add('error');
+      error.textContent = "Please enter valid postal code. ex) A1A 1A1"
+
+      parent.appendChild(error);
+    }
+  } 
+    //
 </script>
