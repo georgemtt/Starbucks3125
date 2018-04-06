@@ -28,18 +28,22 @@ Menu page
   <div class="container-fluid">
     <div class="navbar-header" >
       <a href="index.html" style="float:left"><img src ="./img/wallpaper/logo.png" alt="Starbucks logo" height="75px" width="75px"></a>
-    
-		 <div class="dropdown" style="float:left; margin-top: 20px; margin-left: 20px; border: 1px solid #979797; padding: 0px 33px;">
-		  <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Orders
-		  <span class="caret"></span></button>
-		  <ul class="dropdown-menu" style="font-size: 18px">
-		    <li style ="border-bottom: 1px solid #979797;"><a href="placeOrder.html">Place An Order</a></li>
-		    <li><a href="myOrders.html">My Orders</a></li>
-		  </ul>
-		</div> 
-
+      <div class="dropdown" style="float:left; margin-top: 20px; margin-left: 20px; border: 1px solid #979797; padding: 0px 33px;">
+	  	<button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Orders
+	  		<span class="caret"></span>
+	  	</button>
+	  	<ul class="dropdown-menu" style="font-size: 18px">
+	    	<li style ="border-bottom: 1px solid #979797;"><a href="placeOrder.html">Place An Order</a></li>
+	    	<li><a href="myOrders.html">My Orders</a></li>
+	  	</ul>
+	  </div> 
     </div>
 
+	<div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 20px; margin-left: 20px">
+	  <button type="button" class="btn btn-secondary" style="border: 1px solid #00643C; cursor: default;">$11.39 (3 Items)</button>
+	  <button type="button" class="btn btn-secondary" style="background-color: #00643C; color: white" onClick=" location.href='placeOrder_Review.html'">
+	  Checkout</button>
+	</div>
 
     <ul class="nav navbar-nav navbar-right" style="margin-top: 20px">
   <li>
@@ -63,11 +67,7 @@ Menu page
             <li><a href="index.html">Sign Out</a></li>
           </ul>
         </div> 
-
     </li>
-       <!--  <button class="btn navbar-btn"><a href="signIn.html"><span class="glyphicon glyphicon-user"></span>Sign In</a></button></li> -->
-    
-        <!-- <button class="btn navbar-btn"><a href="signIn.html"><span class="glyphicon glyphicon-log-in"></span>Register</a></button></li> -->
     <li><p style="color:#414141; font-size: 20px; padding: 8px 24px;" > <strong>EN</strong> | FR</p></li>
     </ul>
   </div>
