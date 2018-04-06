@@ -88,7 +88,7 @@
         <input class="submitButton" id="submitButtonPersonal" type="submit" value="Save Changes">
       </form>
     </div>
-    <div class="settingsCard">
+    <div id="accountInfoCard" class="settingsCard">
       <h4>Account Information</h4>
       <form id="accountInfoForm" name="account" method="post">
         Email <input class="settingsField" type="email" name="email" placeholder="Email" value="mgarzon@uottawa.ca">
@@ -96,8 +96,8 @@
       </form>
       <br>
       <h4>Change Password</h4>
-      <form id="changePassword" name="passwordChange" method="post">
-        Old Password <input class="settingsField" type="password" name="oldPass" placeholder="Old Password">
+      <form id="changePassword" name="passwordChange" method="post" onsubmit="return validatePasswordMatch()">
+        Old Password <input class="settingsField" type="password" name="oldPass" placeholder="Old Password" required>
         New Password<input class="settingsField" type="password" name="newPass" placeholder="New Password">
         Confirm New Password<input class="settingsField" type="password" name="cNewPass" placeholder="Confirm Password">
         <input class="submitButton" id="submitButtonPassword" type="submit" value="Change Password">
@@ -182,33 +182,46 @@
             </div>
  
         </div>
-    </div>
-
-</footer>
+    </div></footer>
 </html>
 
 <script>
-	function showResults(){
-    var parent = document.querySelector("#storeTitle");
+function validatePersonal(){
 
-    var input = document.getElementById("storeSearch").value;
-    var regex = /^(([A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]))$/;
-    if(regex.test(input)){
-      document.getElementById("storesListContainer").style.display = "block";
-    }
-    else{
-      console.log("asdfa")
-      if(document.querySelector(".error")){
-        var rem = document.querySelector(".error")
-        parent.removeChild(rem);
-      } 
+}
+
+function validatePasswordMatch() {
+  var pass = document.forms["passwordChange"]["newPass"].value;
+  var cPass = document.forms["passwordChange"]["cNewPass"].value;
+  if(String(pass) != String(cPass)){
+      insertError("Passwords must match");
+      return false;
+  }
+}
+
+function validateEmail() {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var email = document.forms["account"]["email"].value;
+  if (!re.test(String(email).toLowerCase())) {
+      insertError("Please enter valid email")
+      return false;
+  }
+}
+
+
+function insertError(errorText){
+  var form = document.querySelector("#accountInfoCard")
+
+  if(document.querySelector(".error")){
+    var rem = document.querySelector(".error")
+    form.removeChild(rem);
+  }
   
-      var error = document.createElement('p'); 
-      error.classList.add('error');
-      error.textContent = "Please enter valid postal code. ex) A1A 1A1"
+  var error = document.createElement('p'); 
+  error.classList.add('error');
+  error.textContent = String(errorText);
+  error.setAttribute("style", "text-align: center; margin-top: 10px;")
 
-      parent.appendChild(error);
-    }
-  } 
-    //
+  form.appendChild(error);
+}
 </script>
