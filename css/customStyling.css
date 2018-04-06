@@ -90,7 +90,9 @@
 	background-color: #f2f2f2;
 	padding: 5px;
 	border-radius: 4px;
-	margin-top: 5px
+	margin-top: 5px;
+	cursor: pointer;
+	border: none;
 }
 
 .modal{
@@ -223,5 +225,33 @@ button:focus, input:focus{
 
 .preferred{
 	border-color: #7cc0ff;
+	background-color: #ecf6ff;
+}
+
+.nextButton{
+	display: inline;
+	width: 250px;
+	height: 30px;
+	margin-top: 25px;
+	float:right;
+	border: none;
+	border-radius: 3px;
+	color: white;
+}
+
+.nextEnabled{
+	background-color: #00643C;
+}
+
+.nextEnabled:hover{
+	background-color: #00975b;
+}
+
+.nextDisabled{
+	background-color: grey;
+}
+
+.chosenStore{
+	border: 1px solid #7cc0ff;
 	background-color: #ecf6ff;
 }
