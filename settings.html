@@ -104,14 +104,14 @@
       </form>
     </div>
     <div id="paymentInfo">
-      <h4>Payment Information</h4>
-      <div class="paymentMethod preferred">
-        <h4>Visa Credit Card - Preferred</h4>
+      <h4>Payment Information</h4> <h6>Click to set preferred payment method</h6>
+      <div class="paymentMethod chosenStore" onclick="setPreferred(this)">
+        <h4>Visa Credit Card</h4>
         **** **** **** 0101<br>
         Miguel Garzon<br>
         (555) 555 5555
       </div>
-      <div class="paymentMethod">
+      <div class="paymentMethod" onclick="setPreferred(this)">
         <h4>Paypal</h4>
         mgarzon@uottawa.ca<br>
         Miguel Garzon<br>
@@ -223,5 +223,14 @@ function insertError(errorText){
   error.setAttribute("style", "text-align: center; margin-top: 10px;")
 
   form.appendChild(error);
+}
+
+function setPreferred(element){
+  if(document.querySelector(".chosenStore")){
+    var chosen = document.querySelector(".chosenStore");
+    chosen.classList.remove("chosenStore");
+  }
+
+  element.classList.add("chosenStore")
 }
 </script>
