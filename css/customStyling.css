@@ -256,3 +256,22 @@ button:focus, input:focus{
 	border: 1px solid #7cc0ff;
 	background-color: #ecf6ff;
 }
+
+.menuDetailButton{
+	padding-top: 5px;
+	position: absolute;
+	bottom: 45px;
+	right: 10px;
+	height: 25px;
+	width: 60px;
+	border: none;
+	color: white;
+	background:rgba(0,0,0,0.1);
+	border: 1px solid white;
+	border-radius: 20px
+}
+
+.menuDetailButton:hover{
+	background-color: white;
+	color:#00643C;
+}
