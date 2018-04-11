@@ -41,6 +41,13 @@ Profile page of Signed In user
           </ul>
         </div> 
 
+
+        <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 20px; margin-left: 20px">
+          <button type="button" class="btn btn-secondary" style="border: 1px solid #00643C; cursor: default;">$11.39 (3 Items)</button>
+          <button type="button" class="btn btn-secondary" style="background-color: #00643C; color: white" onClick=" location.href='placeOrder_Review.html'">
+          Checkout</button>
+        </div>
+
     </div>
 
     <ul class="nav navbar-nav navbar-right" style="margin-top: 20px">
@@ -90,9 +97,11 @@ Profile page of Signed In user
   </div>
 
 
+
+
 <div class="container scrollable" style="background:white; height: 500px; width: auto; border-bottom: 6px solid #c3c3c3;">
-  <!--<h2 style ="color:#414141; font-weight:500;">Menu</h2>-->
-  <div id="tinyBorder" style=" border-bottom: 6px solid #cccccc;"> </div>
+  <h1 id="menuTitle" style ="color:#414141; font-weight:700;">Menu</h1>
+  <div id="tinyBorder" style=" border-bottom: 6px solid #00643C;"> </div>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist" style="font-size: 23px; color:#414141;">
       <li role="presentation" class="active" >
@@ -109,44 +118,54 @@ Profile page of Signed In user
   <div class="tab-content" style="font-weight:600;" >
     <div role="tabpanel" class="tab-pane active" id="drinks" >
       <div class="grid-container" > <!-- style="background-color:#f2f2f2;" -->
-      <div class="grid-item" >Vanilla Sweet Cream Cold Brew
+      <div class="grid-item">Vanilla Sweet Cream Cold Brew
         <img class="menuItemImage" src="img/menu/drinks1.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
             <button type="button" class="menuButton" onClick="addItem()">
               <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Narino 70 Cold Brew
         <img class="menuItemImage" src="img/menu/drinks2.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Iced Coffee
         <img class="menuItemImage" src="img/menu/drinks3.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Iced Coffee with Milk
         <img class="menuItemImage" src="img/menu/drinks4.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Pike Place Roast
         <img class="menuItemImage" src="img/menu/drinks5.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">True North Blend Blonde Roast
         <img class="menuItemImage" src="img/menu/drinks6.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Caffe Misto
         <img class="menuItemImage" src="img/menu/drinks7.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Caffe Americano
         <img class="menuItemImage" src="img/menu/drinks8.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Cappucino
         <img class="menuItemImage" src="img/menu/drinks9.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Caramel Macchiato
         <img class="menuItemImage" src="img/menu/drinks10.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div></div>
     </div>
@@ -154,90 +173,112 @@ Profile page of Signed In user
       <div class="grid-container">
       <div class="grid-item">Chonga Bagel
         <img class="menuItemImage" src="img/menu/bakery1.png" height="80px" width="100%">
+            <button type="button" class="menuDetailButton">Details</button>
             <button type="button" class="menuButton" onClick="addItem()">
               <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">8-Grain Roll
         <img class="menuItemImage" src="img/menu/bakery2.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Almond Croissant
         <img class="menuItemImage" src="img/menu/bakery3.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Apple Fritter
         <img class="menuItemImage" src="img/menu/bakery4.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Banana Nut Bread
         <img class="menuItemImage" src="img/menu/bakery5.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Blueberry Muffin with Yogurt and Honey
         <img class="menuItemImage" src="img/menu/bakery6.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Blueberry Scone
         <img class="menuItemImage" src="img/menu/bakery7.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Butter Croissant
         <img class="menuItemImage" src="img/menu/bakery8.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Caramelized Apple Pound Cake
         <img class="menuItemImage" src="img/menu/bakery9.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Cheese Danish
         <img class="menuItemImage" src="img/menu/bakery10.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Chocolate Chip Cookie
         <img class="menuItemImage" src="img/menu/bakery11.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
             <div class="grid-item">8-Grain Roll
         <img class="menuItemImage" src="img/menu/bakery2.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Almond Croissant
         <img class="menuItemImage" src="img/menu/bakery3.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Apple Fritter
         <img class="menuItemImage" src="img/menu/bakery4.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Banana Nut Bread
         <img class="menuItemImage" src="img/menu/bakery5.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Blueberry Muffin with Yogurt and Honey
         <img class="menuItemImage" src="img/menu/bakery6.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Blueberry Scone
         <img class="menuItemImage" src="img/menu/bakery7.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Butter Croissant
         <img class="menuItemImage" src="img/menu/bakery8.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Caramelized Apple Pound Cake
         <img class="menuItemImage" src="img/menu/bakery9.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Cheese Danish
         <img class="menuItemImage" src="img/menu/bakery10.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Chocolate Chip Cookie
         <img class="menuItemImage" src="img/menu/bakery11.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Chocolate Chunk Muffin
         <img class="menuItemImage" src="img/menu/bakery12.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div></div>
     </div>
@@ -245,18 +286,22 @@ Profile page of Signed In user
       <div class="grid-container">
       <div class="grid-item">Bacon, Gouda & Egg Breakfast Sandwich
         <img class="menuItemImage" src="img/menu/breakfast1.png" height="80px" width="100%">
+            <button type="button" class="menuDetailButton">Details</button>
             <button type="button" class="menuButton" onClick="addItem()">
               <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Certified Gluten-Free Breakfast Sandwich
         <img class="menuItemImage" src="img/menu/breakfast2.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Chicken Sausage & Bacon Biscuit
         <img class="menuItemImage" src="img/menu/breakfast3.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Classic Oatmeal
         <img class="menuItemImage" src="img/menu/breakfast4.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div></div>
     </div>
@@ -264,24 +309,28 @@ Profile page of Signed In user
       <div class="grid-container">
       <div class="grid-item">Ancho Chipotle Chicken Panini
         <img class="menuItemImage" src="img/menu/lunch1.png" height="80px" width="100%">
+            <button type="button" class="menuDetailButton">Details</button>
             <button type="button" class="menuButton" onClick="addItem()">
               <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Chicken & Double-Smoked Bacon
         <img class="menuItemImage" src="img/menu/lunch2.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Chicken Artichoke on Flatbread
         <img class="menuItemImage" src="img/menu/lunch3.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div>
       <div class="grid-item">Chicken BLT Salad Sandwich
         <img class="menuItemImage" src="img/menu/lunch4.png" height="80px" width="100%">
+        <button type="button" class="menuDetailButton">Details</button>
         <button type="button" class="menuButton" onClick="addItem()">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add</button></div></div>
     </div>
-    </div>
   </div>
 </div>
+
 </div>
 </div>
 
